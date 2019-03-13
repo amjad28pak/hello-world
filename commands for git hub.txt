@@ -1,0 +1,106 @@
+
+HP@amjad MINGW64 /d/practice for git hub
+$ git clone https://github.com/amjad28pak/hello-world.git
+Cloning into 'hello-world'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+HP@amjad MINGW64 /d/practice for git hub
+$ cd hello-world/
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ git add .
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ git commit -m "resolved issue first"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@amjad.(none)')
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ ^C
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$  git config --global user.email "amjad28.pak@gmail.com"
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ ^C
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ git config --global user.name "amjad ali"
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ git commit -m "resolved issue one"
+[master a8d1da9] resolved issue one
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.txt
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 296 bytes | 148.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/amjad28pak/hello-world.git
+   f345aa1..a8d1da9  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+HP@amjad MINGW64 /d/practice for git hub/hello-world (master)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/amjad28pak/hello-world
+   a8d1da9..35b7da4  master     -> origin/master
+Updating a8d1da9..35b7da4
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
